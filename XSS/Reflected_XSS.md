@@ -13,6 +13,8 @@ The payload is returned as part of the application's response and is executed im
 
 > 📷 **Screenshot:** DVWA page before injecting the payload.
 
+![DVWA Reflected XSS Before Injection](/XSS/assets/Reflected_XSS%20Normal.png)
+<br><br>
 The application displays the user input normally.
 
 ### Injecting the Payload
@@ -22,15 +24,16 @@ Payload used:
 ```html
 <script>alert(1)</script>
 ```
-
-> 📷 **Screenshot:** Payload entered into the input field.
-
 > 📷 **Screenshot:** Alert box after successful execution.
 
+![DVWA Reflected XSS Before Injection](/XSS/assets/Reflected_XSS%20Injected.png)
+<br><br>
 When the payload is submitted, the application returns it in the HTTP response without safely handling it. The browser parses the response as HTML, encounters the `<script>` tag, and executes the JavaScript code inside it, resulting in the alert box being displayed.
 
 ## 🔍 Looking at the Page Source
 
 > 📷 **Screenshot:** Page source with the reflected payload highlighted.
 
+![DVWA Reflected XSS Before Injection](/XSS/assets/Reflected_XSS%20Page%20Source.png)
+<br><br>
 The highlighted section shows where the application inserted the user-controlled input into the HTML response. Because the payload was returned as HTML instead of plain text, the browser treated it as part of the webpage and executed the JavaScript contained inside the `<script>` tag.
