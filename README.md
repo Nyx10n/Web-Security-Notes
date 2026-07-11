@@ -3,9 +3,8 @@
 A collection of my practical notes, examples, and lab exercises while learning web application security.
 
 ## 📚 Topics 
-  - Cross-Site Scripting (XSS)
-  - Cross-Site Request Forgery (CSRF)
-  (More will be added after learning)
+  - [Cross-Site Scripting (XSS)](/XSS)
+  - [Cross-Site Request Forgery (CSRF)](/CSRF)
 
 ## 🧪 Labs Used
   - Damn Vulnerable Web Application (DVWA)
