@@ -9,5 +9,4 @@ Depending on the application's functionality and security controls, a successful
 - 📄 [Reflected XSS](Reflected_XSS.md)
 - 📄 [Stored XSS](Stored_XSS.md)
 - 📄 [DOM-Based XSS](DOM-Based_XSS.md)
-- 💣 [Payloads](Payloads.md)
 - 🛡️ [Prevention](Prevention.md)
